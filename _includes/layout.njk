@@ -17,7 +17,16 @@ title: spacetime.saxon.zone
   </head>
   <body>
     <div class="container">
+        {% if eleventyNavigation and eleventyNavigation.parent %}
+            <nav class="nav-breadcrumb" aria-labelledby="breadcrumb">
+            {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.parent, {includeSelf: true}) | eleventyNavigationToHtml({ listClass: 'fl fl-inline', activeListItemClass: 'breadcrumb-active' }) | safe }}
+            </nav>
+        {% endif %}
+
         {{ content | safe }}
+    </div>
+    <div class="navigation">
+        {#{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }#}
     </div>
   </body>
 </html>

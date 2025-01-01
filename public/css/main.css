@@ -6,10 +6,10 @@ body {
   padding: 20px;
 }
 
-/*
+
 h1 {
-  color: #003873;
-} */
+  margin-top: 10px;
+}
 
 a {
   color: #007bff;
@@ -26,6 +26,36 @@ a:hover {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-breadcrumb {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-breadcrumb ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-breadcrumb li {
+    display: inline;
+    list-style-type: none;
+    margin: auto;
+    margin-right: 4px;
+}
+
+.nav-breadcrumb li:after {
+	--breadcrumb-arrow-size: 0.4em;
+	display: inline-block;
+	margin-left: 6px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: var(--breadcrumb-arrow-size) solid transparent;
+	border-bottom: var(--breadcrumb-arrow-size) solid transparent;
+	border-left: var(--breadcrumb-arrow-size) solid #000000;
 }
 
 img {
