@@ -1,5 +1,10 @@
 ---
 layout: layout.njk
+eleventyNavigation:
+    parent: Website Details
+    key: Test Room
+    order: 2
+    excerpt: Page with 11ty plugins, customized shortcodes, etc.
 ---
 
 # Test Room

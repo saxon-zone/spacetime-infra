@@ -1,5 +1,8 @@
 ---
 layout: layout.njk
+eleventyNavigation:
+    key: Home
+    excerpt: Home Page
 ---
 
 Hi :)
