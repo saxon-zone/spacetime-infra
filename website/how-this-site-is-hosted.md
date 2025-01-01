@@ -1,5 +1,10 @@
 ---
 layout: layout.njk
+eleventyNavigation:
+    parent: Website Details
+    key: Hosting Details
+    order: 1
+    excerpt: Description of hosting setup and development loop
 ---
 
 # How is this Website Hosted and Developed?
