@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
 
 
     eleventyConfig.addPassthroughCopy("./public");
+    eleventyConfig.addPassthroughCopy("robots.txt");
 
     eleventyConfig.addWatchTarget("public/**/*.{svg,webp,png,jpeg}");
 
